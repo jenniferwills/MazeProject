@@ -5,6 +5,7 @@ void updateBallPosition(){
     ballPos[0] += ballVel[0];
     ballPos[1] += ballVel[1];
   }
+  //if the game mode includes walls and portals
   if (isPathBlocked == 1){
     int onPortal = checkIfOnPortal();
     if (onPortal > 0 && transferred == 0){
