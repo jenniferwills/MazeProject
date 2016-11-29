@@ -4,7 +4,7 @@
 #include "wirechange.h" //contains functions involving getting values from accelerometer.
 #include "button.h" //contains functions involving buttons: setupButton(), checkButton()
 #include "ball.h" //updateBallPosition(), checkIfWin()
-#include "portal.h"
+#include "portal.h" //updatePortalPosition(), checkIfOnPortal()
 
 int gameStarted = 0;
 int difficultySelected = 0;

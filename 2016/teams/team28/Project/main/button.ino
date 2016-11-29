@@ -14,18 +14,19 @@ void checkButton(int stage){
       viewNum++;
       
       if (viewNum > 6){
+        //does not go back to zero, because you should only be allowed the one chance to win immediately... ;)
         viewNum = 1;
       }
       pathWidth -= 2;
-      
+
       if (viewNum == 1){
         pathWidth = 8;
-        isPathBlocked = 0;
+        isPathBlocked = 0;  //normal game mode
       }
       
       if (viewNum == 4){
         pathWidth = 8;
-        isPathBlocked = 1;
+        isPathBlocked = 1;  //portal game mode
       }
       
       finishX = 128 / (pathWidth + 1) * (pathWidth + 1) - 5;
